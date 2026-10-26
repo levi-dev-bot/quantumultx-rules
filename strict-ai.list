@@ -1,23 +1,23 @@
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,sora.com
-DOMAIN-SUFFIX,ai.com
-DOMAIN,cdn.auth0.com
-DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,claudeusercontent.com
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,generativelanguage.googleapis.com
-DOMAIN-SUFFIX,aistudio.google.com
-DOMAIN-SUFFIX,makersuite.google.com
-DOMAIN-SUFFIX,grok.com
-DOMAIN-SUFFIX,x.ai
-DOMAIN,copilot.microsoft.com
-DOMAIN-SUFFIX,githubcopilot.com
-DOMAIN-SUFFIX,perplexity.ai
-DOMAIN-SUFFIX,pplx.ai
-DOMAIN-SUFFIX,poe.com
-DOMAIN-SUFFIX,muse.ai
-DOMAIN-KEYWORD,muse
+host-suffix, chatgpt.com, US-IP
+host-suffix, openai.com, US-IP
+host-suffix, oaistatic.com, US-IP
+host-suffix, oaiusercontent.com, US-IP
+host-suffix, sora.com, US-IP
+host-suffix, ai.com, US-IP
+host, cdn.auth0.com, US-IP
+host-suffix, claude.ai, US-IP
+host-suffix, anthropic.com, US-IP
+host-suffix, claudeusercontent.com, US-IP
+host-suffix, gemini.google.com, US-IP
+host-suffix, generativelanguage.googleapis.com, US-IP
+host-suffix, aistudio.google.com, US-IP
+host-suffix, makersuite.google.com, US-IP
+host-suffix, grok.com, US-IP
+host-suffix, x.ai, US-IP
+host, copilot.microsoft.com, US-IP
+host-suffix, githubcopilot.com, US-IP
+host-suffix, perplexity.ai, US-IP
+host-suffix, pplx.ai, US-IP
+host-suffix, poe.com, US-IP
+host-suffix, muse.ai, US-IP
+host-keyword, muse, US-IP
