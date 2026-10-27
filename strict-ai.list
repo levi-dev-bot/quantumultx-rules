@@ -4,9 +4,55 @@
 # 策略名占位: US-IP（QX 里开「策略偏好」可覆盖）
 # 与 general.list 互斥：general 已剔除以下所有 AI 域名
 
-# ===== OpenAI / ChatGPT / Sora（0 条）=====
+# ===== OpenAI / ChatGPT / Sora（46 条）=====
+HOST-SUFFIX,ai.com,US-IP
+HOST-SUFFIX,chat.com,US-IP
+HOST-SUFFIX,chatgpt.com,US-IP
+HOST-SUFFIX,chatgpt.livekit.cloud,US-IP
+HOST-SUFFIX,crixet.com,US-IP
+HOST-SUFFIX,oaistatic.com,US-IP
+HOST-SUFFIX,oaiusercontent.com,US-IP
+HOST-SUFFIX,openai.com,US-IP
+HOST-SUFFIX,openaiapi-site.azureedge.net,US-IP
+HOST-SUFFIX,openaicom.imgix.net,US-IP
+HOST-SUFFIX,sora.com,US-IP
+HOST-KEYWORD,chatgpt-async-webps-prod,US-IP
+HOST-KEYWORD,openai,US-IP
+IP-CIDR,199.47.142.0/23,US-IP,no-resolve
+IP-CIDR,24.199.123.28/32,US-IP,no-resolve
+IP-CIDR,64.23.132.171/32,US-IP,no-resolve
+IP6-CIDR,2604:f20::/32,US-IP,no-resolve
+IP-ASN,401518,US-IP,no-resolve
+HOST,browser-intake-datadoghq.com,US-IP
+HOST,openai-api.arkoselabs.com,US-IP
+HOST,openaiassets.blob.core.windows.net,US-IP
+HOST,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,US-IP
+HOST,openaicomproductionae4b.blob.core.windows.net,US-IP
+HOST,production-openaicom-storage.azureedge.net,US-IP
+HOST,static.cloudflareinsights.com,US-IP
+HOST-SUFFIX,algolia.net,US-IP
+HOST-SUFFIX,api.statsig.com,US-IP
+HOST-SUFFIX,auth0.com,US-IP
+HOST-SUFFIX,chatgpt.site,US-IP
+HOST-SUFFIX,client-api.arkoselabs.com,US-IP
+HOST-SUFFIX,events.statsigapi.net,US-IP
+HOST-SUFFIX,featuregates.org,US-IP
+HOST-SUFFIX,host.livekit.cloud,US-IP
+HOST-SUFFIX,identrust.com,US-IP
+HOST-SUFFIX,intercom.io,US-IP
+HOST-SUFFIX,intercomcdn.com,US-IP
+HOST-SUFFIX,launchdarkly.com,US-IP
+HOST-SUFFIX,oaistatsig.com,US-IP
+HOST-SUFFIX,observeit.net,US-IP
+HOST-SUFFIX,openai.com.cdn.cloudflare.net,US-IP
+HOST-SUFFIX,openai.org,US-IP
+HOST-SUFFIX,segment.io,US-IP
+HOST-SUFFIX,sentry.io,US-IP
+HOST-SUFFIX,statsigapi.net,US-IP
+HOST-SUFFIX,stripe.com,US-IP
+HOST-SUFFIX,turn.livekit.cloud,US-IP
 
-# ===== Anthropic / Claude（48 条）=====
+# ===== Anthropic / Claude（44 条）=====
 HOST-SUFFIX,anthropic.com,US-IP
 HOST-SUFFIX,anthropic.com.cn,US-IP
 HOST-SUFFIX,antspace.dev,US-IP
@@ -42,16 +88,12 @@ HOST-SUFFIX,anthropic.team,US-IP
 HOST-SUFFIX,chatbotclaude.com,US-IP
 HOST-SUFFIX,claude.dev,US-IP
 HOST-SUFFIX,claudeacademy.com,US-IP
-HOST-SUFFIX,intercom.io,US-IP
-HOST-SUFFIX,intercomcdn.com,US-IP
 HOST-SUFFIX,interface.feedback,US-IP
 HOST-SUFFIX,lcicat.org,US-IP
 HOST-SUFFIX,lcicollections.org,US-IP
 HOST-SUFFIX,mcpservertest.online,US-IP
 HOST-SUFFIX,muthos.com,US-IP
-HOST-SUFFIX,sentry.io,US-IP
 HOST-SUFFIX,sillylittleguy.org,US-IP
-HOST-SUFFIX,statsigapi.net,US-IP
 HOST-KEYWORD,datadog,US-IP
 HOST-KEYWORD,sentry,US-IP
 HOST-KEYWORD,sift,US-IP
@@ -124,7 +166,7 @@ HOST-SUFFIX,grok.x.com,US-IP
 HOST-SUFFIX,grokipedia.com,US-IP
 HOST-SUFFIX,x.ai,US-IP
 
-# ===== Microsoft Copilot / GitHub Copilot（32 条）=====
+# ===== Microsoft Copilot / GitHub Copilot（20 条）=====
 HOST,location.microsoft.com,US-IP
 HOST,odc.officeapps.live.com,US-IP
 HOST-SUFFIX,copilot.microsoft.com,US-IP
@@ -132,7 +174,6 @@ HOST-SUFFIX,githubcopilot.com,US-IP
 HOST,api.msn.com,US-IP
 HOST,api.statsig.com,US-IP
 HOST,assets.msn.com,US-IP
-HOST,browser-intake-datadoghq.com,US-IP
 HOST,copilot-proxy.githubusercontent.com,US-IP
 HOST,copilot-workspace.githubnext.com,US-IP
 HOST,copilotprodattachments.blob.core.windows.net,US-IP
@@ -140,22 +181,11 @@ HOST,gateway.bingviz.microsoft.net,US-IP
 HOST,gateway.bingviz.microsoftapp.net,US-IP
 HOST,in.appcenter.ms,US-IP
 HOST,self.events.data.microsoft.com,US-IP
-HOST,static.cloudflareinsights.com,US-IP
 HOST,sydney.bing.com,US-IP
-HOST-SUFFIX,algolia.net,US-IP
 HOST-SUFFIX,api.microsoftapp.net,US-IP
-HOST-SUFFIX,auth0.com,US-IP
 HOST-SUFFIX,bing-shopping.microsoft-falcon.io,US-IP
 HOST-SUFFIX,challenges.cloudflare.com,US-IP
-HOST-SUFFIX,client-api.arkoselabs.com,US-IP
 HOST-SUFFIX,edgeservices.bing.com,US-IP
-HOST-SUFFIX,events.statsigapi.net,US-IP
-HOST-SUFFIX,featuregates.org,US-IP
-HOST-SUFFIX,identrust.com,US-IP
-HOST-SUFFIX,launchdarkly.com,US-IP
-HOST-SUFFIX,observeit.net,US-IP
-HOST-SUFFIX,segment.io,US-IP
-HOST-SUFFIX,stripe.com,US-IP
 IP-ASN,14061,US-IP,no-resolve
 
 # ===== Perplexity（5 条）=====
