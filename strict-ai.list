@@ -1,48 +1,175 @@
-host-suffix, chatgpt.com, US-IP
-host-suffix, openai.com, US-IP
-host-suffix, oaistatic.com, US-IP
-host-suffix, oaiusercontent.com, US-IP
-host-suffix, sora.com, US-IP
-host-suffix, ai.com, US-IP
-host, cdn.auth0.com, US-IP
-host-suffix, claude.ai, US-IP
-host-suffix, anthropic.com, US-IP
-host-suffix, claudeusercontent.com, US-IP
-host-suffix, gemini.google.com, US-IP
-host-suffix, generativelanguage.googleapis.com, US-IP
-host-suffix, aistudio.google.com, US-IP
-host-suffix, makersuite.google.com, US-IP
-host-suffix, grok.com, US-IP
-host-suffix, x.ai, US-IP
-host, copilot.microsoft.com, US-IP
-host-suffix, githubcopilot.com, US-IP
-host-suffix, perplexity.ai, US-IP
-host-suffix, pplx.ai, US-IP
-host-suffix, poe.com, US-IP
-host-suffix, muse.ai, US-IP
-host-keyword, muse, US-IP
-host-suffix, accountkit.com, US-IP
-host-suffix, cdninstagram.com, US-IP
-host-suffix, f8.com, US-IP
-host-suffix, facebookmail.com, US-IP
-host-suffix, fb.com, US-IP
-host-suffix, fb.me, US-IP
-host-suffix, fb.watch, US-IP
-host-suffix, fbaddins.com, US-IP
-host-suffix, fbcdn.net, US-IP
-host-suffix, fbsbx.com, US-IP
-host-suffix, fbworkmail.com, US-IP
-host-suffix, instagram.com, US-IP
-host-suffix, m.me, US-IP
-host-suffix, messenger.com, US-IP
-host-suffix, meta.ai, US-IP
-host-suffix, meta.com, US-IP
-host-suffix, oculus.com, US-IP
-host-suffix, oculuscdn.com, US-IP
-host-suffix, readyatdawn.com, US-IP
-host-suffix, rocksdb.org, US-IP
-host-suffix, threads.com, US-IP
-host-suffix, threads.net, US-IP
-host-suffix, whatsapp.com, US-IP
-host-suffix, whatsapp.net, US-IP
-host-keyword, .facebook., US-IP
+# Strict-AI 风控严服务名单 —— 走美国 IP 专用策略
+# 数据源: VPSDance/ai-proxy-rules (每日自动同步) + Repcz/Tool 补充
+# 生成: 2026-10-27
+# 策略名占位: US-IP（QX 里开「策略偏好」可覆盖）
+# 与 general.list 互斥：general 已剔除以下所有 AI 域名
+
+# ===== OpenAI / ChatGPT / Sora（0 条）=====
+
+# ===== Anthropic / Claude（48 条）=====
+HOST-SUFFIX,anthropic.com,US-IP
+HOST-SUFFIX,anthropic.com.cn,US-IP
+HOST-SUFFIX,antspace.dev,US-IP
+HOST-SUFFIX,clau.de,US-IP
+HOST-SUFFIX,claude.ai,US-IP
+HOST-SUFFIX,claude.app,US-IP
+HOST-SUFFIX,claude.com,US-IP
+HOST-SUFFIX,claude.new,US-IP
+HOST-SUFFIX,claude.site,US-IP
+HOST-SUFFIX,claudemcpclient.com,US-IP
+HOST-SUFFIX,claudemcpcontent.com,US-IP
+HOST-SUFFIX,claudepages.dev,US-IP
+HOST-SUFFIX,claudestudio.com,US-IP
+HOST-SUFFIX,claudeusercontent.com,US-IP
+HOST-SUFFIX,modelcontextprotocol.com,US-IP
+HOST-SUFFIX,modelcontextprotocol.io,US-IP
+HOST-SUFFIX,modelcontextprotocol.net,US-IP
+HOST-SUFFIX,modelcontextprotocol.org,US-IP
+IP-CIDR,160.79.104.0/21,US-IP,no-resolve
+IP6-CIDR,2607:6bc0::/32,US-IP,no-resolve
+IP-ASN,399358,US-IP,no-resolve
+HOST,anthropic-com.ghost.io,US-IP
+HOST,anthropic.auth0.com,US-IP
+HOST,anthropic.com.cdn.cloudflare.net,US-IP
+HOST,browser-intake-us5-datadoghq.com,US-IP
+HOST,cdn.growthbook.io,US-IP
+HOST,cdn.usefathom.com,US-IP
+HOST,servd-anthropic-website.b-cdn.net,US-IP
+HOST,storage.googleapis.com,US-IP
+HOST-SUFFIX,//github.com/aprilnea/reverse-engineering-claude-code-antspace,US-IP
+HOST-SUFFIX,ant.dev,US-IP
+HOST-SUFFIX,anthropic.team,US-IP
+HOST-SUFFIX,chatbotclaude.com,US-IP
+HOST-SUFFIX,claude.dev,US-IP
+HOST-SUFFIX,claudeacademy.com,US-IP
+HOST-SUFFIX,intercom.io,US-IP
+HOST-SUFFIX,intercomcdn.com,US-IP
+HOST-SUFFIX,interface.feedback,US-IP
+HOST-SUFFIX,lcicat.org,US-IP
+HOST-SUFFIX,lcicollections.org,US-IP
+HOST-SUFFIX,mcpservertest.online,US-IP
+HOST-SUFFIX,muthos.com,US-IP
+HOST-SUFFIX,sentry.io,US-IP
+HOST-SUFFIX,sillylittleguy.org,US-IP
+HOST-SUFFIX,statsigapi.net,US-IP
+HOST-KEYWORD,datadog,US-IP
+HOST-KEYWORD,sentry,US-IP
+HOST-KEYWORD,sift,US-IP
+
+# ===== Google Gemini / AI Studio（47 条）=====
+HOST-SUFFIX,ai.google.dev,US-IP
+HOST-SUFFIX,ai.studio,US-IP
+HOST-SUFFIX,aistudio.google.com,US-IP
+HOST-SUFFIX,antigravity.google,US-IP
+HOST-SUFFIX,antigravity.google.com,US-IP
+HOST-SUFFIX,bard.google.com,US-IP
+HOST-SUFFIX,deepmind.com,US-IP
+HOST-SUFFIX,deepmind.google,US-IP
+HOST-SUFFIX,gemini.google,US-IP
+HOST-SUFFIX,gemini.google.com,US-IP
+HOST-SUFFIX,generativeai.google,US-IP
+HOST-SUFFIX,generativelanguage.googleapis.com,US-IP
+HOST-SUFFIX,notebooklm.google,US-IP
+HOST-SUFFIX,notebooklm.google.com,US-IP
+HOST,alkalicore-pa.clients6.google.com,US-IP
+HOST,alkalimakersuite-pa.clients6.google.com,US-IP
+HOST,antigravity-pa.googleapis.com,US-IP
+HOST,antigravity.googleapis.com,US-IP
+HOST,cloudaicompanion.googleapis.com,US-IP
+HOST,cloudcode-pa.googleapis.com,US-IP
+HOST,daily-cloudcode-pa.googleapis.com,US-IP
+HOST,geminiweb-pa.clients.google.com,US-IP
+HOST,geminiweb-pa.clients6.google.com,US-IP
+HOST,notebooklm-pa.googleapis.com,US-IP
+HOST,notebooklm.googleapis.com,US-IP
+HOST,webchannel-alkalimakersuite-pa.clients6.google.com,US-IP
+HOST-SUFFIX,aicode.googleapis.com,US-IP
+HOST-SUFFIX,aida.googleapis.com,US-IP
+HOST-SUFFIX,aisandbox-pa.googleapis.com,US-IP
+HOST-SUFFIX,antigravity-unleash.goog,US-IP
+HOST-SUFFIX,flow.google,US-IP
+HOST-SUFFIX,flow.google.com,US-IP
+HOST-SUFFIX,geller-pa.googleapis.com,US-IP
+HOST-SUFFIX,gemini.gstatic.com,US-IP
+HOST-SUFFIX,jules.google,US-IP
+HOST-SUFFIX,jules.google.com,US-IP
+HOST-SUFFIX,labs.google,US-IP
+HOST-SUFFIX,labs.google.com,US-IP
+HOST-SUFFIX,labstailwind.pa.googleapis.com,US-IP
+HOST-SUFFIX,makersuite.google.com,US-IP
+HOST-SUFFIX,notebook.google,US-IP
+HOST-SUFFIX,notebook.google.com,US-IP
+HOST-SUFFIX,opal.google,US-IP
+HOST-SUFFIX,opal.google.com,US-IP
+HOST-SUFFIX,proactivebackend-pa.googleapis.com,US-IP
+HOST-SUFFIX,robinfrontend-pa.googleapis.com,US-IP
+HOST-SUFFIX,stitch.withgoogle.com,US-IP
+
+# ===== Meta AI / Muse / Llama（11 条）=====
+HOST,ai.developer.meta.com,US-IP
+HOST,ai.meta.com,US-IP
+HOST,aidemos.meta.com,US-IP
+HOST,developer.meta.com,US-IP
+HOST,llama.developer.meta.com,US-IP
+HOST-SUFFIX,atmeta.com,US-IP
+HOST-SUFFIX,llama.com,US-IP
+HOST-SUFFIX,llamameta.net,US-IP
+HOST-SUFFIX,meta.ai,US-IP
+HOST-SUFFIX,metaaivm.com,US-IP
+HOST-SUFFIX,muse.ai,US-IP
+
+# ===== xAI / Grok（4 条）=====
+HOST-SUFFIX,grok.com,US-IP
+HOST-SUFFIX,grok.x.com,US-IP
+HOST-SUFFIX,grokipedia.com,US-IP
+HOST-SUFFIX,x.ai,US-IP
+
+# ===== Microsoft Copilot / GitHub Copilot（32 条）=====
+HOST,location.microsoft.com,US-IP
+HOST,odc.officeapps.live.com,US-IP
+HOST-SUFFIX,copilot.microsoft.com,US-IP
+HOST-SUFFIX,githubcopilot.com,US-IP
+HOST,api.msn.com,US-IP
+HOST,api.statsig.com,US-IP
+HOST,assets.msn.com,US-IP
+HOST,browser-intake-datadoghq.com,US-IP
+HOST,copilot-proxy.githubusercontent.com,US-IP
+HOST,copilot-workspace.githubnext.com,US-IP
+HOST,copilotprodattachments.blob.core.windows.net,US-IP
+HOST,gateway.bingviz.microsoft.net,US-IP
+HOST,gateway.bingviz.microsoftapp.net,US-IP
+HOST,in.appcenter.ms,US-IP
+HOST,self.events.data.microsoft.com,US-IP
+HOST,static.cloudflareinsights.com,US-IP
+HOST,sydney.bing.com,US-IP
+HOST-SUFFIX,algolia.net,US-IP
+HOST-SUFFIX,api.microsoftapp.net,US-IP
+HOST-SUFFIX,auth0.com,US-IP
+HOST-SUFFIX,bing-shopping.microsoft-falcon.io,US-IP
+HOST-SUFFIX,challenges.cloudflare.com,US-IP
+HOST-SUFFIX,client-api.arkoselabs.com,US-IP
+HOST-SUFFIX,edgeservices.bing.com,US-IP
+HOST-SUFFIX,events.statsigapi.net,US-IP
+HOST-SUFFIX,featuregates.org,US-IP
+HOST-SUFFIX,identrust.com,US-IP
+HOST-SUFFIX,launchdarkly.com,US-IP
+HOST-SUFFIX,observeit.net,US-IP
+HOST-SUFFIX,segment.io,US-IP
+HOST-SUFFIX,stripe.com,US-IP
+IP-ASN,14061,US-IP,no-resolve
+
+# ===== Perplexity（5 条）=====
+HOST,ppl-ai-file-upload.s3.amazonaws.com,US-IP
+HOST,pplx-res.cloudinary.com,US-IP
+HOST-SUFFIX,perplexity.ai,US-IP
+HOST-SUFFIX,perplexity.com,US-IP
+HOST-SUFFIX,pplx.ai,US-IP
+
+# ===== Poe（2 条）=====
+HOST-SUFFIX,poe.com,US-IP
+HOST-SUFFIX,poecdn.net,US-IP
+
+# ===== Repcz/Tool 补充 =====
+HOST-SUFFIX,g.ai,US-IP
+HOST-KEYWORD,alkalimakersuite-pa.clients6.google.com,US-IP
+
