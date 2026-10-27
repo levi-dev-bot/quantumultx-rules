@@ -82,7 +82,6 @@ HOST,cdn.growthbook.io,US-IP
 HOST,cdn.usefathom.com,US-IP
 HOST,servd-anthropic-website.b-cdn.net,US-IP
 HOST,storage.googleapis.com,US-IP
-HOST-SUFFIX,//github.com/aprilnea/reverse-engineering-claude-code-antspace,US-IP
 HOST-SUFFIX,ant.dev,US-IP
 HOST-SUFFIX,anthropic.team,US-IP
 HOST-SUFFIX,chatbotclaude.com,US-IP
