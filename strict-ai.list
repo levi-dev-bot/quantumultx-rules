@@ -1,7 +1,7 @@
 # Strict-AI 风控严服务名单 —— 走美国 IP 专用策略
 # 数据源: ai-core.list(手工核心,保底) + VPSDance/ai-proxy-rules(global 境外聚合)
 #         + Repcz/Tool(AI) 补充;国内 AI 服务商由 exclude-cn.txt 剔除
-# 生成: 2026-10-28  共 327 条(核心 180 / L1 新增 131 / L2 新增 16)
+# 生成: 2026-10-29  共 327 条(核心 180 / L1 新增 131 / L2 新增 16)
 # 由 scripts/merge-strict-ai.py 每日 04:00 自动生成,勿手改本文件;补条目请改 ai-core.list
 # 策略名占位: US-IP(QX 里开「策略偏好」可覆盖)
 # 与 general.list 互斥: general 已剔除以下所有 AI 域名
