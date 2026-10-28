@@ -1,15 +1,18 @@
-# ============================================================
-# 风控专线 · 个人补充列表（先于 strict-ai / PayPal / Stripe 匹配）
-# ------------------------------------------------------------
-# 风控专线策略组（v2 配置）: 风控-美家宽 → 风控-美国 → 风控-日本 → 风控-狮城
-# 默认走「风控-美家宽」（机场住宅 IP 节点，过 AI/支付风控最稳）
-# ------------------------------------------------------------
-# 加域名:      host-suffix, example.com, Proxy
-# 加精确域名:  host, api.example.com, Proxy
-# 加关键字:    host-keyword, example, Proxy
-# 加 IPv4 段:  ip-cidr, 203.0.113.0/24, Proxy
-# 加 IPv6 段:  ip6-cidr, 2001:db8::/32, Proxy
-# 行尾的 Proxy 是占位策略名，导入时被 force-policy=风控专线 覆盖，不用改
-# ------------------------------------------------------------
-# 保存提交后，QX 端: 分流页 → 全部更新（或等 48h 自动同步）
-# ============================================================
+# 风控专线 · 个人补充（先于 strict-ai/PayPal/Stripe 匹配）
+# 用法: 直接在下面加规则行, 行尾策略名不用改(导入时被 force-policy 覆盖)
+#   host-suffix, example.com, Proxy     → 该域名及所有子域名
+#   host, api.example.com, Proxy        → 仅精确域名
+#   host-keyword, example, Proxy        → 含关键字即命中(慎用)
+#   ip-cidr, 203.0.113.0/24, Proxy      → IPv4 段
+#   ip6-cidr, 2001:db8::/32, Proxy      → IPv6 段
+# 提交后 QX → 分流页 → 全部更新 即生效
+
+# ↓↓↓ 在这条线以下添加你的规则 ↓↓↓
+host-suffix, notebooklm.google.com, Proxy
+host-suffix, grok.com, Proxy
+host-suffix, x.ai, Proxy
+host-suffix, mistral.ai, Proxy
+host-suffix, deepl.com, Proxy
+host-suffix, notion.so, Proxy
+host-suffix, notion.com, Proxy
+host-suffix, midjourney.com, Proxy

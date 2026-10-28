@@ -1,12 +1,24 @@
-# ============================================================
-# 自定义直连 · 个人补充列表（在 ChinaMax 之前匹配，可覆盖其结果）
-# ------------------------------------------------------------
-# 适合: ChinaMax 没收录、但你确认要直连的国内域名/IP
-# 加域名:      host-suffix, example.cn, Direct
-# 加精确域名:  host, api.example.cn, Direct
-# 加关键字:    host-keyword, example, Direct
-# 加 IPv4 段:  ip-cidr, 203.0.113.0/24, Direct
-# 行尾的 Direct 是占位策略名，导入时被 force-policy=direct 覆盖，不用改
-# ------------------------------------------------------------
-# 保存提交后，QX 端: 分流页 → 全部更新（或等 48h 自动同步）
-# ============================================================
+# 自定义直连 · 个人补充（先于 ChinaMax 匹配，可强制直连）
+# 用法: 直接在下面加规则行, 行尾策略名不用改(导入时被 force-policy 覆盖)
+#   host-suffix, example.cn, Direct     → 该域名及所有子域名
+#   host, api.example.cn, Direct        → 仅精确域名
+#   host-keyword, example, Direct       → 含关键字即命中(慎用)
+#   ip-cidr, 203.0.113.0/24, Direct     → IPv4 段
+# 提交后 QX → 分流页 → 全部更新 即生效
+
+# ↓↓↓ 在这条线以下添加你的规则 ↓↓↓
+host-suffix, mc.meituan.com, Direct
+host-suffix, meituan.com, Direct
+host-suffix, dianping.com, Direct
+host-suffix, aliyundrive.com, Direct
+host-suffix, aliyun.com, Direct
+host-suffix, taobao.com, Direct
+host-suffix, jd.com, Direct
+host-suffix, bilibili.com, Direct
+host-suffix, biliapi.net, Direct
+host-suffix, bilivideo.com, Direct
+host-suffix, qingque.cn, Direct
+host-suffix, zhihu.com, Direct
+host-suffix, zhimg.com, Direct
+host-suffix, xiaohongshu.com, Direct
+host-suffix, xhscdn.com, Direct

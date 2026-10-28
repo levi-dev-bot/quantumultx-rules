@@ -1,12 +1,14 @@
-# ============================================================
-# 普通国外 · 个人补充列表（走「普通国外」策略组，可自由换节点）
-# ------------------------------------------------------------
-# 适合: general.list 没收录的小众国外站、自建服务、API 站点
-# 加域名:      host-suffix, example.com, Proxy
-# 加精确域名:  host, api.example.com, Proxy
-# 加关键字:    host-keyword, example, Proxy
-# 加 IPv4 段:  ip-cidr, 203.0.113.0/24, Proxy
-# 行尾的 Proxy 是占位策略名，导入时被 force-policy=普通国外 覆盖，不用改
-# ------------------------------------------------------------
-# 保存提交后，QX 端: 分流页 → 全部更新（或等 48h 自动同步）
-# ============================================================
+# 普通国外 · 个人补充（走「普通国外」组，自由换节点）
+# 用法: 直接在下面加规则行, 行尾策略名不用改(导入时被 force-policy 覆盖)
+#   host-suffix, example.com, Proxy     → 该域名及所有子域名
+#   host, api.example.com, Proxy        → 仅精确域名
+#   host-keyword, example, Proxy        → 含关键字即命中(慎用)
+#   ip-cidr, 203.0.113.0/24, Proxy      → IPv4 段
+# 提交后 QX → 分流页 → 全部更新 即生效
+
+# ↓↓↓ 在这条线以下添加你的规则 ↓↓↓
+host-suffix, ip.skk.moe, Proxy
+host-suffix, ipinfo.io, Proxy
+host-suffix, ip-api.com, Proxy
+host-suffix, ip.sb, Proxy
+host-suffix, checker.software, Proxy
