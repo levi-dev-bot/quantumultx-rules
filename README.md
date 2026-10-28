@@ -24,7 +24,7 @@ ip-cidr, 203.0.113.0/24, Proxy       # IPv4 网段
 ip6-cidr, 2001:db8::/32, Proxy       # IPv6 网段
 ```
 
-提交后 QX 端生效方式：分流页 → **全部更新**（或等 48h 自动同步）。
+提交后 QX 端生效方式：分流页 → **全部更新**（或等 24h 自动同步，建议手机端 `update-interval` 设 86400）。
 
 ### 上游同步层（从原作者仓库自动拉取，无需手动维护）
 
@@ -37,6 +37,18 @@ ip6-cidr, 2001:db8::/32, Proxy       # IPv6 网段
 | 规则修正 / 微信直连 / 苹果服务 | ddgksf2013 Unbreak、blackmatrix7 WeChat/Apple | direct |
 
 互斥性：strict-ai 里的条目已从 general 剔除；user-strict 优先级最高，可覆盖一切。
+
+### 每日自动生成（strict-ai.list）
+
+GitHub Actions 每天 04:00（北京时间）跑 `scripts/merge-strict-ai.py`：
+
+1. `ai-core.list`（手工核心 164 域名+IP/ASN 段，保底，不过滤）→
+2. L1 VPSDance `rules/quantumult-x/global.list`（境外聚合版，已剔除国内文件）→
+3. L2 Repcz/Tool `QuantumultX/Rules/AI.list` 差集（cursor.sh/groq.com/dify.ai 等）→
+4. `exclude-cn.txt` 命中/`.cn` 后缀一律剔除（只作用上游层，核心层不受影响）→
+5. 有变化才提交；L1 拉取失败保留旧文件。
+
+> 本仓库是**大陆白名单**模式（命中国内名单→直连，其余走代理），所以“国内直连补口”是往 ChinaMax / user-direct.list 加条目；与家宽仓库（levi-dev-bot/clash，国外白名单）方向相反，勿混淆。
 
 ## Quantumult X 配置示例
 

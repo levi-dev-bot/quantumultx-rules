@@ -22,3 +22,13 @@ host-suffix, zhihu.com, Direct
 host-suffix, zhimg.com, Direct
 host-suffix, xiaohongshu.com, Direct
 host-suffix, xhscdn.com, Direct
+
+# --- 山姆会员店(2026-10-28 补录:ChinaMax 0 收录,实测 samsclub.cn 200) ---
+host-suffix, samsclub.cn, Direct
+host-suffix, samsclub.com, Direct
+host-suffix, samsclub.com.cn, Direct
+
+# --- 比亚迪(上游已收录,显式保底防上游改版丢失) ---
+host-suffix, byd.com, Direct
+host-suffix, bydauto.com.cn, Direct
+host-suffix, byd.com.cn, Direct
