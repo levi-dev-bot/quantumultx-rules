@@ -12,3 +12,10 @@ host-suffix, ipinfo.io, Proxy
 host-suffix, ip-api.com, Proxy
 host-suffix, ip.sb, Proxy
 host-suffix, checker.software, Proxy
+
+# --- Grok 页面第三方依赖(2026-10-29 #31:登录人机验证/特性开关/前端库/字体,放普通国外不钉死出口) ---
+host-suffix, hcaptcha.com, Proxy
+host-suffix, featureassets.org, Proxy
+host-suffix, prodregistryv2.org, Proxy
+host-suffix, unpkg.com, Proxy
+host-suffix, fonts.gstatic.com, Proxy

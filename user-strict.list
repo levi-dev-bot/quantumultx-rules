@@ -16,3 +16,9 @@ host-suffix, deepl.com, Proxy
 host-suffix, notion.so, Proxy
 host-suffix, notion.com, Proxy
 host-suffix, midjourney.com, Proxy
+
+# --- Grok 自有依赖(2026-10-29 #31:grok.com 运行期依赖但原名单全未收录,与 grok.com 走同一固定出口,避免上传/沙箱内容与主站出口不一致) ---
+host-suffix, grokusercontent.com, Proxy
+host-suffix, grok-sandbox.com, Proxy
+host-suffix, groktpcontent.com, Proxy
+host-suffix, grok.me, Proxy
